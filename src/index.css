@@ -1,0 +1,102 @@
+:root {
+  --font-main: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Color Palette - Cyber Glass Theme */
+  --bg-app: #090a10;
+  --bg-gradient: radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.18) 0%, transparent 45%),
+                 radial-gradient(circle at 85% 85%, rgba(217, 70, 239, 0.15) 0%, transparent 45%),
+                 radial-gradient(circle at 50% 50%, rgba(20, 22, 36, 1) 0%, #08090e 100%);
+  
+  --card-bg: rgba(22, 25, 38, 0.72);
+  --card-border: rgba(255, 255, 255, 0.09);
+  --card-border-glow: rgba(99, 102, 241, 0.35);
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  /* Button Tokens */
+  --btn-num-bg: rgba(255, 255, 255, 0.04);
+  --btn-num-hover: rgba(255, 255, 255, 0.09);
+  --btn-num-active: rgba(255, 255, 255, 0.15);
+  --btn-num-border: rgba(255, 255, 255, 0.06);
+  --btn-num-text: #f1f5f9;
+
+  --btn-op-bg: rgba(99, 102, 241, 0.12);
+  --btn-op-hover: rgba(99, 102, 241, 0.24);
+  --btn-op-active: rgba(99, 102, 241, 0.36);
+  --btn-op-border: rgba(99, 102, 241, 0.28);
+  --btn-op-text: #a5b4fc;
+
+  --btn-action-bg: rgba(244, 63, 94, 0.12);
+  --btn-action-hover: rgba(244, 63, 94, 0.22);
+  --btn-action-active: rgba(244, 63, 94, 0.32);
+  --btn-action-border: rgba(244, 63, 94, 0.28);
+  --btn-action-text: #fb7185;
+
+  --btn-equals-bg: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+  --btn-equals-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #c026d3 100%);
+  --btn-equals-text: #ffffff;
+  --btn-equals-shadow: 0 8px 24px -4px rgba(139, 92, 246, 0.5);
+
+  --shadow-card: 0 25px 60px -15px rgba(0, 0, 0, 0.6),
+                 0 0 0 1px var(--card-border),
+                 inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+
+  --radius-app: 28px;
+  --radius-btn: 18px;
+  --radius-display: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-app);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
