@@ -4,4 +4,5 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/EJ2-APLICACI-N-CALCULADORA-B-SICA-2/',
 })
